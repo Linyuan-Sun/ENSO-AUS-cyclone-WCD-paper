@@ -1,6 +1,3 @@
-# freq_values根据Fig9的轨迹大概估算一个频率
-# residence time 和 intensity 根据csv数据计算，但是为了一定的效果csv输出过程中使用了153-166经度范围
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
