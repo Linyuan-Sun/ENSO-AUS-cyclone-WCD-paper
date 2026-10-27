@@ -13,7 +13,6 @@ end_md = 1215    ; 12月15日
 min_lifetime_points = 12  ; 最小生命期点数（每小时1个点，12表示12小时）
 ;======================================================
 
-;--- 若输出文件存在则删除
 if (fileexists(out_file)) then
 system("rm -f " + out_file)
 end if
