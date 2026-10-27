@@ -7,7 +7,6 @@ out_file2  = "Tasman_genesis_CPElNino.csv"             ; 输出文件名
 out_file3  = "Tasman_genesis_LaNina.csv"               ; 输出
 ;======================================================
 
-;---加载型事件日期
 f = addfile("/g/data/m35/ls3248/ENSO_cyclone/paper/Fig2/event_identify.nc", "r")
 start_date_EPElNino = f->start_date_EPElNino
 end_date_EPElNino = f->end_date_EPElNino
