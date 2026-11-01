@@ -46,7 +46,7 @@ Comp_prob!0 = "type"
 Comp_prob!1 = "lat"
 Comp_prob!2 = "lon"
 Comp_prob&lat = lat
-Comp_prob&lon = lon+3
+Comp_prob&lon = lon
 
  ;-----plot figure
 	wks = gsn_open_wks(pltType,pltName)
