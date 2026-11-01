@@ -40,9 +40,9 @@ Comp_prob = new((/3, nlat, nlon/),"float")
 f_EP = addfile("./bootstrap/bootstrap_sig_EPElNino_"+type+"_SON.nc", "r") 
 f_CP = addfile("./bootstrap/bootstrap_sig_CPElNino_"+type+"_SON.nc", "r") 
 f_La = addfile("./bootstrap/bootstrap_sig_LaNina_"+type+"_SON.nc", "r") 
-Comp_prob(0,:,:) = f_EP->sig_mask({latMin:latMax},{lonMin:lonMax})*0.8
-Comp_prob(1,:,:) = f_CP->sig_mask({latMin:latMax},{lonMin:lonMax})*0.8
-Comp_prob(2,:,:) = f_La->sig_mask({latMin:latMax},{lonMin:lonMax})*0.8
+Comp_prob(0,:,:) = f_EP->sig_mask({latMin:latMax},{lonMin:lonMax})
+Comp_prob(1,:,:) = f_CP->sig_mask({latMin:latMax},{lonMin:lonMax})
+Comp_prob(2,:,:) = f_La->sig_mask({latMin:latMax},{lonMin:lonMax})
 copy_VarCoords(merge,Comp_prob)
 
  ;-----plot figure
