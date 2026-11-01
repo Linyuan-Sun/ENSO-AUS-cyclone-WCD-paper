@@ -26,9 +26,9 @@ nlat = dimsizes(lat)
 nlon = dimsizes(lon)
 
 merge = new((/3,nlat,nlon/),"float")
-merge(0,:,:) = EP/9.8*0.9 ;convert to geopotential height and adjust
-merge(1,:,:) = CP/9.8*0.9
-merge(2,:,:) = La/9.8*0.9   
+merge(0,:,:) = EP/9.8
+merge(1,:,:) = CP/9.8
+merge(2,:,:) = La/9.8
 merge!0 = "type"
 merge!1 = "lat"
 merge!2 = "lon"
