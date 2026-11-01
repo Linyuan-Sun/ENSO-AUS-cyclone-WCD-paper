@@ -25,9 +25,9 @@ nlat = dimsizes(lat)
 nlon = dimsizes(lon)
 
 Comp_mean = new((/3,nlat,nlon/),"float")
-Comp_mean(0,:,:) = EP*0.7
-Comp_mean(1,:,:) = CP*0.9
-Comp_mean(2,:,:) = La*0.9
+Comp_mean(0,:,:) = EP
+Comp_mean(1,:,:) = CP
+Comp_mean(2,:,:) = La
 Comp_mean!0 = "type"
 Comp_mean!1 = "lat"
 Comp_mean!2 = "lon"
